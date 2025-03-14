@@ -1,7 +1,15 @@
- body{
-	background-image:url("https://wallpaperaccess.com/full/42332.png");
-	font-size: 60px;
-	color: skyblue;
+body{
+background-image:url("https://wallpaperaccess.com/full/42332.png");
+font-size: 40px;
+color: skyblue;
+position: center;
+}
+
+footer{
+font-size:30px;
+font-color:skyblue;
+position: center;
+display: low;
 }
 
 .grid {
@@ -11,6 +19,7 @@
     margin: 0 auto;
     /* display: flex; */
     /* flex-wrap: wrap; */
+	position: center;
   }
 .grid div {
     width: 38px;
@@ -22,6 +31,7 @@
 .buttonGroup
 {
 	display: flex;
+	position: bottom;
 	align-items: center;
 	justify-content: center;
 }

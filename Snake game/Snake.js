@@ -108,7 +108,7 @@ function DrawBoard(){
 }
 
 function StartGame(){
-	CreateApple(3);
+	CreateApple();
 	DrawBoard();
 	Timer = setInterval(Tick, speed);
 	document.addEventListener("keydown", KeyPressed);
@@ -246,6 +246,22 @@ function Tick(){
 	
 	MoveBus();
 	MoveEnemy();
+}
+
+function playAudio(){
+    myAudio.play();
+}
+
+function pauseAudio(){
+	myAudio.pause();
+}
+
+function stopAudio(){
+	myAudio.stop();
+}
+
+function exit(){
+	location.href="file:///C:/Users/User/Desktop/202305127%EA%B9%80%EC%A4%80%ED%98%95-%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%80/portfolio.html";
 }
 
 

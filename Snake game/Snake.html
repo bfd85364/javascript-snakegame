@@ -1,25 +1,29 @@
-
 <html>
 <head>
-    <title>202110647-Snake game</title>
     <link rel="stylesheet" href="Snake.css">
 	<script src="HelperLibrary.js"></script>
     <script src="Snake.js"></script>
 </head>
-
-
 <body>
-	
 	<div id="scoreboard">Score: 0</div>
-    <div id="grid_id" class="grid">
-    </div>
-	
-    <div class="buttonGroup">
-        <button onclick="StartGame()"class="start">Start game</button>
-    </div>
-	
-	
+	<button onclick="StartGame()"class="start">Start game</button>
+	<button onclick="exit()"class="exit">exit game</button>
+	<button onclick="playAudio()">music play</button>
+	<button onclick="pauseAudio()">music pause</button> 
+	<button onclick="stopAudio()">music stop</button></div>
+	<div class="buttonGroup">
+    <div id="grid_id" class="grid"></div>
 </body>
+<footer>
+<div id="rule_id" class="rule">
+[방향키]:화살표<br>
+[목표]:지네를 피해서 최대한 많은 점수를 받기
+<br>
+<br>
+<audio id="myAudio" controls><source src="mezhdunami-flashes-95436.mp3" type="audio/mpeg">
+</audio>
+</div>
+</footer>
 </html>
 
 
